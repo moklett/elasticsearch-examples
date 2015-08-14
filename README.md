@@ -12,7 +12,15 @@ The Slides
 
 (Only available to @chargify team members)
 
-The rake tasks
+The Models
+----------
+
+* Data Model: [`Tweet`](/app/models/tweet.rb)
+* Repository 1 (All Defaults): [`TweetV1Repository`](/app/models/tweet_v1_repository.rb)
+* Repository 2 (Custom Mapping): [`TweetV2Repository`](/app/models/tweet_v2_repository.rb)
+
+
+The Rake Tasks
 --------------
 
 ### Clear/reset my elasticsearch database:

@@ -1,13 +1,9 @@
 Elastic Search Examples
 =======================
 
-This repo was accompaniment to some slides I presented at a @chargify Lunch &
-Learn on our upcoming use of Elasticsearch and the elasticsearch-persistence
-gem.
+This repo was accompaniment to some slides I presented at a @chargify Lunch & Learn on our upcoming use of [elasticsearch](https://www.elastic.co/products/elasticsearch) and the [elasticsearch-persistence](https://github.com/elastic/elasticsearch-rails/tree/master/elasticsearch-persistence) gem.
 
-It demonstrates the use of the Repository model and the use of different
-mappings.  I ingested all of my tweets into a local Elasticsearch instance
-to show some search queries in real time.
+It demonstrates the use of the [Repository pattern](https://github.com/elastic/elasticsearch-rails/tree/master/elasticsearch-persistence#the-repository-pattern) and the use of different mappings.  I ingested all of [my tweets](https://twitter.com/moklett) into a local elasticsearch instance to show some search queries in real time.
 
 The Slides
 ----------

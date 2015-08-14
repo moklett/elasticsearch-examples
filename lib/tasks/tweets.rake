@@ -19,13 +19,6 @@ namespace :tweets do
     tweets = client.get_all_tweets("moklett")
 
     tweets_f   = Rails.root.join("db/tweets.json").to_s
-    gztweets_f = Rails.root.join("db/tweets.json.gz").to_s
     File.open(tweets_f, "w") {|f| f << JSON.pretty_generate(tweets.as_json) }
-    Zlib::GzipWriter.open(gztweets_f) do |gz|
-      gz.mtime = File.mtime(tweets_f)
-      gz.orig_name = tweets_f
-      gz.write IO.binread(tweets_f)
-    end
-    File.unlink(tweets_f)
   end
 end
